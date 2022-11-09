@@ -1,0 +1,13 @@
+{
+  "ownerGroup": "string",
+  "accessGroups": [
+    "string"
+  ],
+  "createdBy": "string",
+  "updatedBy": "string",
+  "owner": "string",
+  "description": "string",
+  "createdAt": "2022-11-09T00:53:03.528Z",
+  "sampleCharacteristics": {},
+  "isPublished": true
+}

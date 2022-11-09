@@ -1,0 +1,19 @@
+{
+  "ownerGroup": "string",
+  "accessGroups": [
+    "string"
+  ],
+  "createdBy": "string",
+  "updatedBy": "string",
+  "proposalId": "string",
+  "pi_email": "string",
+  "pi_firstname": "string",
+  "pi_lastname": "string",
+  "email": "string",
+  "firstname": "string",
+  "lastname": "string",
+  "title": "string",
+  "abstract": "string",
+  "startTime": "2022-11-09T00:52:25.586Z",
+  "endTime": "2022-11-09T00:52:25.586Z"
+}

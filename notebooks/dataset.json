@@ -1,0 +1,44 @@
+{
+  "ownerGroup": "ownerGroup",
+  "accessGroups": [
+    "accessGroup1",
+    "accessGroup2"
+  ],
+  "createdBy": "string",
+  "updatedBy": "string",
+  "owner": "string",
+  "ownerEmail": "string",
+  "orcidOfOwner": "string",
+  "contactEmail": "string",
+  "sourceFolder": "string",
+  "sourceFolderHost": "string",
+  "size": 0,
+  "packedSize": 0,
+  "numberOfFiles": 0,
+  "numberOfFilesArchived": 0,
+  "creationTime": "2022-11-09T00:28:25.442Z",
+  "type": "string",
+  "validationStatus": "string",
+  "keywords": [
+    "string"
+  ],
+  "description": "string",
+  "datasetName": "string",
+  "classification": "string",
+  "license": "string",
+  "version": "string",
+  "isPublished": true,
+  "history": [
+    {}
+  ],
+  "instrumentId": "string",
+  "techniques": [
+    {
+      "pid": "string",
+      "name": "string"
+    }
+  ],
+  "sharedWith": [
+    "string"
+  ]
+}
