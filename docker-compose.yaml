@@ -4,7 +4,9 @@ services:
     container_name: scimongo
     image: mongo:4.2
     ports:
-    - "127.0.0.1:27017:27017"
+    - "27017:27017"
+
+   
   
   # frontend:
   #   image:  dacat/catanie:latest
@@ -23,7 +25,27 @@ services:
   #   # - '80:4200'
   #   # command: sleep 9999999
 
-  # backend:
-  #   build:
-  #     context: ./scicat-backend-next
+  backend:
+     build:
+       context: ./scicat-backend-next
+     ports:
+       - '3000:3000'
+     depends_on:
+       - scimongo
+       # - openldap
+     environment:
+       MONGODB_URI: mongodb://scimongo:27017/scicat
+       EXPRESS_SESSION_SECRET: "${EXPRESS_SESSION_SECRET}"
+       JWT_SECRET: "${JWT_SECRET}"
+       PORT: 3000
+       HTTP_MAX_REDIRECTS: 5
+       HTTP_TIMEOUT: 5000
+       JWT_EXPIRES_IN: 3600
+       SITE: SAMPLE-SITE
+       PID_PREFIX: PID.SAMPLE.PREFIX
+       DOI_PREFIX: DOI.SAMPLE.PREFIX
+       METADATA_KEYS_RETURN_LIMIT: 100
+       METADATA_PARENT_INSTANCES_RETURN_LIMIT: 100
+       ADMIN_GROUPS: admin, ingestor
+
     
