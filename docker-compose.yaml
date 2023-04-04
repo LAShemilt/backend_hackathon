@@ -46,6 +46,6 @@ services:
        DOI_PREFIX: DOI.SAMPLE.PREFIX
        METADATA_KEYS_RETURN_LIMIT: 100
        METADATA_PARENT_INSTANCES_RETURN_LIMIT: 100
-       ADMIN_GROUPS: admin, ingestor
+       ADMIN_GROUPS: admin,ingestor
 
     
